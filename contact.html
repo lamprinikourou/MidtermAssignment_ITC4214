@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowHub - Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">GrowHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="tasks.html">Tasks</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                <li class="nav-item"><button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, suggestions, or would like to reach out, please use the form below or find us on social media.</p>
+        
+        <form id="contactForm" class="my-4">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container my-5">
+        <h2>Our Location</h2>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.793861896156!2d23.833100899999994!3d38.0052684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199709f059559%3A0xad1dacf4713268b2!2sThe%20American%20College%20of%20Greece!5e0!3m2!1sel!2sgr!4v1730190099200!5m2!1sel!2sgr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    <div class="container text-center my-5">
+        <h2>Connect with Us</h2>
+        <a href="https://www.facebook.com/DereeTheAmericanCollegeOfGreece?locale=el_GR" class="btn btn-outline-primary mx-2">Facebook</a>
+        <a href="https://www.instagram.com/deree_acg/?hl=el" class="btn btn-outline-primary mx-2">Instagram</a>
+        <a href="https://www.linkedin.com/school/deree-the-american-college-of-greece/posts/?feedView=all" class="btn btn-outline-primary mx-2">LinkedIn</a>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <p>&copy; 2024 GrowHub | Follow us on <a href="https://www.linkedin.com/in/lamprini-kourou/">Social Media</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('#darkModeToggle').click(function() {
+            $('body').toggleClass('dark-mode');
+        });
+
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const subject = $('#subject').val();
+            const message = $('#message').val();
+            alert(`Message Sent!\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+            $('#contactForm')[0].reset();
+        });
+    </script>
+    
+</body>
+</html>

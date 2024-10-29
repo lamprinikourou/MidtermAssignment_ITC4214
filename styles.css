@@ -1,0 +1,275 @@
+body.dark-mode { 
+    background-color: #2e2e2e; 
+    color: #f1f1f1; 
+}
+.dark-mode .navbar, 
+.dark-mode .footer { 
+    background-color: #333; 
+    color: #f1f1f1;
+}
+.dark-mode .navbar-brand, 
+.dark-mode .nav-link, 
+.dark-mode .footer a { 
+    color: #66bb6a !important; 
+}
+.dark-mode .nav-link:hover { 
+    color: #81c784 !important; 
+}
+.dark-mode .btn-primary { 
+    background-color: #66bb6a; 
+    border-color: #66bb6a; 
+}
+
+.dark-mode h1, 
+.dark-mode h2 { 
+    color: #81c784; 
+}
+
+.dark-mode .card {
+    background-color: #424242;  
+    color: #f1f1f1;             
+    border: none;
+}
+
+.dark-mode .card-title {
+    color: #81c784;
+}
+
+.dark-mode .card-text {
+    color: #c8e6c9;
+}
+
+.dark-mode .testimonial-item {
+    color: #c8e6c9;
+}
+
+.dark-mode .testimonial-text {
+    color: #a5d6a7;  
+}
+
+.dark-mode .testimonial-author {
+    color: #81c784;
+}
+
+.dark-mode table {
+    color: #f1f1f1;
+    background-color: #424242;
+    border-color: #333;
+}
+
+.dark-mode th, 
+.dark-mode td {
+    color: #e0f7fa; 
+}
+
+.dark-mode th {
+    background-color: #333;
+    color: #81c784;
+    font-weight: bold;
+}
+
+.dark-mode .table-bordered th,
+.dark-mode .table-bordered td {
+    border: 1px solid #555;
+}
+
+.dark-mode .btn-success, 
+.dark-mode .btn-warning, 
+.dark-mode .btn-danger {
+    color: #ffffff;
+}
+
+.dark-mode .btn-success {
+    background-color: #388e3c;
+    border-color: #388e3c;
+}
+
+.dark-mode .btn-warning {
+    background-color: #f57c00;
+    border-color: #f57c00;
+}
+
+.dark-mode .btn-danger {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.navbar-light.bg-light { 
+    background-color: #e8f5e9 !important; 
+}
+.navbar-brand { 
+    color: #388e3c !important; 
+}
+.nav-link { 
+    color: #388e3c !important; 
+}
+.nav-link:hover { 
+    color: #2e7d32 !important; 
+}
+.btn-primary { 
+    background-color: #388e3c; 
+    border-color: #388e3c; 
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+}
+.btn-primary:hover { 
+    background-color: #2e7d32; 
+    border-color: #2e7d32; 
+}
+
+h1 {
+    color: #388e3c;
+    margin-top: -20px; 
+    margin-bottom: 30px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 3em; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+h2 {
+    color: #388e3c;
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+
+.footer { 
+    background-color: #e8f5e9; 
+    color: #388e3c; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+.footer a { 
+    color: #388e3c; 
+}
+
+.description-text {
+    font-size: 1.3em; 
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px; 
+}
+.description-text .highlight {
+    font-size: 1.2em; 
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.plant-image {
+    width: 300px; 
+    margin-top: 60px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.testimonial-item {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;       
+    object-position: center; 
+    border-radius: 50%;    
+    border: 3px solid #388e3c;
+    margin: 0 auto 15px;
+}
+
+.testimonial-text {
+    font-size: 1.25em;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #388e3c;
+    margin-top: -10px;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plant-of-the-month {
+    background-color: #e8f5e9;
+    border: 1px solid #388e3c;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.plant-of-the-month::before, .plant-of-the-month::after {
+    content: '"';
+    font-size: 3em;
+    color: #388e3c;
+    position: absolute;
+    top: -20px;
+}
+
+.plant-of-the-month::before {
+    left: 10px;
+}
+
+.plant-of-the-month::after {
+    right: 10px;
+}
+
+.plant-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.dark-mode .card {
+    background-color: #424242;
+    color: #f1f1f1;
+    border: none;
+}
+
+.dark-mode .carousel-control-prev-icon,
+.dark-mode .carousel-control-next-icon {
+    background-color: #388e3c;
+}
+
+.dark-mode .plant-image {
+    border: 5px solid #81c784;
+}
+
+.dark-mode .carousel-item {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.plant-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.dark-mode .list-group-item {
+    background-color: #3a3a3a;  
+    color: #c8e6c9;             
+    border-color: #555;    
+}
+
+.dark-mode .list-group-item a {
+    color: #81c784;            
+}
+
+.dark-mode .list-group-item a:hover {
+    color: #a5d6a7;           
+}
